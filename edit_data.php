@@ -53,6 +53,8 @@ if (!$show2) {
                 <form action="./controller/editController.php" method="POST">
                     <h2>ACCESS GAINED:</h2>
                     <br>
+                    <input type="hidden" name="userId" value="<?php echo $user['user_id']; ?>">
+    <input type="hidden" name="sharingCode" value="<?php echo $sharingCode; ?>">
                     <label for="firstName">First Name:</label>
                     <input type="text" name="firstName" value="<?php echo $user['first_name']; ?>" id="firstName" required>
                     <br>
